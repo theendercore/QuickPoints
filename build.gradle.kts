@@ -11,6 +11,7 @@ group = property("maven_group")!!
 version = property("mod_version")!!
 
 repositories {
+    maven("https://cursemaven.com/")
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -25,6 +26,8 @@ dependencies {
 
     modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
+
+    modImplementation("curse.maven", "xaers-minimap-263420", property("xaero_minimap_id") as String)
 }
 
 tasks {

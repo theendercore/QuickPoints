@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "quickway",
   "version": "${version}",
 
-  "name": "ModId",
+  "name": "QuickWay",
   "description": "Writen by end!",
   "authors": [
     "Ender"
@@ -14,19 +14,19 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/quickway/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "org.teamvoided.modid.ModIdKt::onInitialize"
+        "value": "com.theendercore.quickway.QuickWayKt::onInitialize"
       }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "quickway.mixins.json"
   ],
 
   "depends": {
