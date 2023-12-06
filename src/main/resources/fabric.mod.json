@@ -18,23 +18,19 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "client": [
       {
         "adapter": "kotlin",
-        "value": "com.theendercore.quickway.QuickWayKt::onInitialize"
+        "value": "com.theendercore.quickway.QuickWay::clientInit"
       }
     ]
   },
-  "mixins": [
-    "quickway.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.14.12",
     "fabric": "*",
-    "minecraft": "1.19.x",
     "java": ">=17",
-    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0"
+    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0",
+    "xaerominimap": "*"
   },
   "suggests": {
     "another-mod": "*"

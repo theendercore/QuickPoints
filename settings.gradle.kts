@@ -1,12 +1,9 @@
 pluginManagement {
     repositories {
-        maven("https://maven.fabricmc.net/") {
-            name = "Fabric"
-        }
+        maven("https://maven.fabricmc.net/") { name = "Fabric" }
         mavenCentral()
         gradlePluginPortal()
     }
-
     val loom_version: String by settings
     val fabric_kotlin_version: String by settings
     plugins {
@@ -17,3 +14,4 @@ pluginManagement {
                     .split("+")[0] // Ensures sentences like `+build.1` are ignored
     }
 }
+rootProject.name =  "QuickWay"
